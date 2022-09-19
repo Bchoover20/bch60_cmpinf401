@@ -28,3 +28,8 @@ public class DecomposingMoney {
 				+ benjamins + " benjamins \n" + sawbucks + " sawbucks \n" + bucks + " bucks \n ");
 	}
 }
+
+
+// string.split 
+// substring
+

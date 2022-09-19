@@ -6,7 +6,7 @@ public class ClassWorkFor401 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String userInput = JOptionPane.showInputDialog(null, "Please enter a number: ");
+		/*String userInput = JOptionPane.showInputDialog(null, "Please enter a number: ");
 		
 		int userInputInt = Integer.parseInt(userInput); //parse int turns an int into a string through typecasting
 		
@@ -36,7 +36,8 @@ public class ClassWorkFor401 {
 			System.out.println("Even");
 		else
 			System.out.println("Odd");
-		
+			
+				
 		// Comparing Strings
 		
 		String s1 = "hello";
@@ -52,6 +53,8 @@ public class ClassWorkFor401 {
 		if(s1.equalsIgnoreCase(s2)) {
 			System.out.println("equals");
 		}
+		
+	*/
 	/*
 	 * 	/*	
 		// Seperating the two numbers by using substrings
@@ -65,7 +68,37 @@ public class ClassWorkFor401 {
 			System.out.println("This is ")
 	*/
 		
+	
+	// Infinite While Loops
+	/*
+	while(userInput.equalsIgnoreCase("quit")) {
+	String userInput = JOptionPane.showInputDialog(null, "Enter a word. Enter 'quit' to exit: ");
+	System.out.println(userInput);
 		
 	}
+	*/
+		
+	// Do-While loop 
+	/*
+		boolean x = false;
+		do {
+			System.out.println("hello");
+		} while (x = true);
+	*/
+	
+	// INTERESTING -----------------------------------
+	Car c1 = new Car();
+	c1.color = "Red";
+	c1.make = "Ford";
+	
+	Car c2 = new Car();
+	c2.color = "green";
+	c2.make = "Toyota";
+	
+	c1.start();
+	System.out.println(c1.carState);
+		
+	}
+
 
 }
