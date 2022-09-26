@@ -87,13 +87,25 @@ public class ClassWorkFor401 {
 	*/
 	
 	// INTERESTING -----------------------------------
-	Car c1 = new Car();
-	c1.color = "Red";
-	c1.make = "Ford";
+	Car c1 = new Car(2020, "red", "Tesla", "Model 3");
 	
-	Car c2 = new Car();
-	c2.color = "green";
+	/*
+	 * c1.color = "Red";
+	   c1.make = "Ford";
+	*/
+	
+	//System.out.println(c1.);
+	
+	System.out.println(c1.getColor() + ", " + c1.getMake() + ", " + c1.getModel());
+	
+	Car c2 = new Car(1967, "navy blue", "Ford", "Mustang");
+	
+	/*
+	 * 
+	 * c2.color = "green";
 	c2.make = "Toyota";
+	 * 
+	 */
 	
 	c1.start();
 	System.out.println(c1.carState);
