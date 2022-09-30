@@ -19,62 +19,46 @@ public class UtilityDriver {
 	double internet = myObj.nextDouble();
 	
 	// Assigning the correct utilities to the person that payed them
-	double Brandon = electric;
 	double Jerod = gas;
-	double Shu_Yuan = internet;
 	double Brian = water;
+	double Brandon = electric;
+	double Shu_Yuan = internet;
 	double Jack = 0;
 	
 	// magicNum is the var that if you would split the total cost evenely thats what it would cost
-	double subCost=0;
 	double magicNum=0;
-	double aditionalAmount=0;
 	
-	
-	
-	System.out.println(gas);
-	System.out.println(water);
-	System.out.println(electric);
-	System.out.println(internet);
-	
-	
-	// Array of given utilities
+	// Array of given utilities and calculating the eqaul amount that each person should pay for the month
 	double[] utilities = {gas, water, electric, internet};
 	
 	for(int i=0; i<4; i++) {
 		
-		 utilities[i] = utilities[i]/4;
-		 
-		 utilities[i] += magicNum;
-		 
-		 System.out.println(magicNum);
-		
+		 utilities[i] = utilities[i]/5;
+		 magicNum += utilities[i];
 	}
 	
+	System.out.println("The amount that everyone should contributed this month is: " + (int) magicNum + " dollars");
 	// for += operator x = x + y
 	
-	double[] roomates = {Brandon, Jerod, Shu_Yuan, Brian, Jack};
+	// Indicing through the roomates to see who needs money back
+	String[] roomateString = { "Jerod", "Brian", "Brandon", "Shu_Yuan", "Jack"};
+	double[] roomates = {Jerod, Brian, Brandon, Shu_Yuan, Jack};
+	//int [] roomatesFinal = {0,0,0,0,0};
+	//int setLimit = (int) (0 - magicNum);
 	
 	for (int i=0; i<5; i++) {
 		roomates[i] = (roomates[i] - magicNum);
 		
-		if (roomates[i] > 0) {
-			aditionalAmount +=  roomates[i];
+		if (roomates[i] >= 0) {
+			int roomatesFinal = (int) roomates[i];
+			System.out.println(roomateString[i] + " needs to be payed: " + roomatesFinal + " dollars");
 		}
-	
-	}
-	
-	System.out.println("Additional Amount that should be payed back to roomates: " + aditionalAmount);
-	
-	for (int i=0; i<5; i++) {
+		else if(roomates[i] < 0 ) {
+			int roomatesFinal = (int) roomates[i]*-1;
+			System.out.println(roomateString[i] + " needs to pay: " + roomatesFinal + " dollars");
+		}
 		
 	}
-		
-	}
-	
-	
-	
-
-	}
-
+}
+}
 
