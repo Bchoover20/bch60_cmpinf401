@@ -21,11 +21,10 @@ public class RollingDiceSimulator {
 			
 			rollDice (timesRolled, new Random());
 			
-			System.out.println("Experiment concluded, would you like to continue? If so, Input anything other than '2'");
+			System.out.println("Experiment concluded, would you like to continue? If so, Input any NUMBER other than '2'");
 			Scanner userInput2 = new Scanner(System.in);
 			prompt = userInput2.nextInt();
 			
-			System.out.println(prompt);
 		} while (prompt !=2);
 		
 		System.out.println("You have chosen to exit the program have a nice day!");
@@ -48,7 +47,7 @@ public class RollingDiceSimulator {
 			int theRoll = roll1 + roll2;
 			rollData[i] = theRoll;
 			
-			System.out.println(rollData[i]);
+			//System.out.println(rollData[i]);
 		}
 		
 		// Array that is going to be used to calculate the percentage of each number in rollData[] occurring
@@ -72,8 +71,8 @@ public class RollingDiceSimulator {
 		//Initializing counter for System out to get Dice roll right
 		int counter=1;
 		for (int i=0; i<11; i++) {
-			//percentage[i] = percentage[i]/100;
-			//percentage[i] = percentage[i]*100;
+			percentage[i] = percentage[i]/timesRolled;
+			percentage[i] = percentage[i]*100;
 			counter++;
 			
 			System.out.println("The dice rolled a combined " + counter + " approimately " + percentage[i] + " percent of the time. Out of " + timesRolled + " rolls");
