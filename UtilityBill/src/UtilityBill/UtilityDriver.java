@@ -57,7 +57,6 @@ public class UtilityDriver {
 			int roomatesFinal = (int) roomates[i]*-1;
 			System.out.println(roomateString[i] + " needs to pay: " + roomatesFinal + " dollars");
 		}
-		
 	}
 }
 }
