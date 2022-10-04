@@ -44,6 +44,7 @@ public class RollingDiceSimulator {
 			int roll1 = (randomNum.nextInt(6) + 1);
 			int roll2 = (randomNum.nextInt(6) + 1);
 			
+			// Adding each die to get the roll
 			int theRoll = roll1 + roll2;
 			rollData[i] = theRoll;
 			
@@ -78,19 +79,6 @@ public class RollingDiceSimulator {
 			System.out.println("The dice rolled a combined " + counter + " approimately " + percentage[i] + " percent of the time. Out of " + timesRolled + " rolls");
 		}
 	}
-	
-	// int roll = rand.nextInt(bound: 6) + 1 
-	// 6 is exclusive so you have to add one because it would end at 6
-	
-	// Scanner input = new Scanner(System.in);
-	
-	// input.nextLine(); // they want to continue 
-	
-	// rollDice ( 10000 number of times , new Random) ;
-	
-	// next line in scanner
-	
-	// new Scanner(System.in);
 	
 	
 	
