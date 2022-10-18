@@ -31,13 +31,16 @@ public class UtilityDriver {
 	// Array of given utilities and calculating the eqaul amount that each person should pay for the month
 	double[] utilities = {gas, water, electric, internet};
 	
+	
 	for(int i=0; i<4; i++) {
+		
+		System.out.println(utilities[i]);
 		
 		 utilities[i] = utilities[i]/5;
 		 magicNum += utilities[i];
 	}
 	
-	System.out.println("The amount that everyone should contributed this month is: " + (int) magicNum + " dollars");
+	System.out.println("The amount that everyone should contribute this month is: " + (int) magicNum + " dollars");
 	// for += operator x = x + y
 	
 	// Indicing through the roomates to see who needs money back

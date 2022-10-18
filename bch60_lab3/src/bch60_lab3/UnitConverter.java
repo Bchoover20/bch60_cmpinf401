@@ -22,7 +22,6 @@ public class UnitConverter {
 				whiteSpace = i;	
 			}
 		}
-		
 		// Using the saved whitespace var to seperate string input must 
 		
 		String units = userInput.substring((whiteSpace+1), userInput.length());
