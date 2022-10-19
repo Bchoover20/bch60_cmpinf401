@@ -7,19 +7,17 @@ package bch60_MenuManager;
  */
 
 public class Entree {
-	
+
 	private String name;
 	private String description;
 	private int calories;
-	
+
 	// The Constructor for class Entree
 	public Entree ( String name, String description, int calories) {
-		
-		// Using this. to allow for multiple instances of these objects that are passed through the parameters of this constructor
 		this.name = name;
 		this.description = description;
 		this.calories = calories;
-		
+
 	}
 
 	public String getName() {

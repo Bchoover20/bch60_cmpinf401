@@ -6,15 +6,12 @@ package bch60_MenuManager;
  * created: 10/7/2022
  */
 public class Salad {
-	
+
 	private String name;
 	private String description;
 	private int calories;
-	
+
 	public Salad ( String name, String description, int calories) {
-		
-		
-		// is this the proper way to do this?? or the dessert class way of doing it
 		this.name=name;
 		this.description=description;
 		this.calories=calories;
@@ -44,8 +41,8 @@ public class Salad {
 		this.calories = calories;
 	}
 
-	
-	
-	
+
+
+
 
 }

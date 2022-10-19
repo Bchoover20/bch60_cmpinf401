@@ -11,18 +11,11 @@ public class Side {
 	private String name;
 	private String description;
 	private int calories;
-	
+
 	public Side (String name, String description, int calories) {
 		this.name = name;
 		this.description = description;
 		this.calories = calories;
-	}
-	
-	// Does this differentiate because of the static void? Nemo 
-	public static void Side (String name, String description, int calories) {
-		
-		System.out.println("Am initializing instances of objects here or in Main, what does this method do?");
-		
 	}
 
 	public String getName() {
@@ -39,6 +32,7 @@ public class Side {
 
 	public void setDescription(String description) {
 		this.description = description;
+
 	}
 
 	public int getCalories() {
@@ -49,5 +43,5 @@ public class Side {
 		this.calories = calories;
 	}
 
-	
+
 }

@@ -11,13 +11,12 @@ public class Dessert {
 	private String name;
 	private String description;
 	private int calories;
-	
+
 	public Dessert (String name, String description, int calories) {
-		
-		// Initializaing the state of the variables in the constructor
-		this.name="";
-		this.name="";
-		this.calories=0;
+	// Initializing the state of the variables in the constructor
+		this.name=name;
+		this.description=description;
+		this.calories=calories;
 	}
 
 	public String getName() {
@@ -44,7 +43,7 @@ public class Dessert {
 		this.calories = calories;
 	}
 
-	
-	
-	
+
+
+
 }
