@@ -110,6 +110,7 @@ public class ClassWorkFor401 {
 	c1.start();
 	System.out.println(c1.carState);
 	
+/*
 	public class InterestCalculator {
 	     public double calculateInterest(double balance) {
 	          final double RATE = 50;
@@ -134,7 +135,7 @@ public class ClassWorkFor401 {
 					year + " years.");
 	     }
 	}
-		
+	*/
 	}
 
 
