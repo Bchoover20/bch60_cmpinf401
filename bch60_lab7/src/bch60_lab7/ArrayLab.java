@@ -3,7 +3,7 @@ package bch60_lab7;
 public class ArrayLab {
 
 	/**
-	 * Class Array
+	 * Class ArrayLab
 	 * @author Brandon Hoover
 	 * created: 10/25/2022
 	 */
@@ -11,11 +11,12 @@ public class ArrayLab {
 	public static double max (double[]data) {
 
 		int i = 0;
-		double tempMax=0;
+		double tempMax= data[0];
 
 		for (double element : data) {
-			if (data[i] > tempMax)
+			if (data[i] > tempMax) {
 				tempMax = data[i];
+			}
 			i++;
 		}
 
@@ -26,6 +27,7 @@ public class ArrayLab {
 
 		int i = 0;
 		double tempMin = data[0];
+		
 		for (double element : data) {
 			if (data[i] < tempMin ) {
 				tempMin = data[i];
@@ -43,7 +45,6 @@ public class ArrayLab {
 			tempSum += data[i];
 			i++;
 		}
-
 		return tempSum;
 	}
 

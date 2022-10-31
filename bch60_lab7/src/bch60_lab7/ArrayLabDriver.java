@@ -3,19 +3,24 @@ package bch60_lab7;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Class ArrayLabDriver
+ * @author Brandon Hoover
+ * created: 10/25/2022
+ */
 
 public class ArrayLabDriver {
 
 	public static void main (String [] args) {
 
 
-		System.out.println("How many items would you like to be randomly generated into the array");
+		System.out.println("How many numbers would you like to be randomly generated into the array");
 		Scanner userInput = new Scanner(System.in);
 
 		int arraySize = userInput.nextInt();
 
 		//System.out.println(arraySize);
-		// creates an array the size of what the user input
+		//Creates an array the size of what the user input
 		double[] data = new double[arraySize];
 
 		//Filling the indices of the array with random values
@@ -27,13 +32,6 @@ public class ArrayLabDriver {
 
 			System.out.println(data[i]);
 		}
-
-		// testing enhanced for loops 
-		/*
-		for (double element : data) {
-			System.out.println("HI");
-		}
-		 */
 		
 		System.out.println("The maximum value in the array is: " + ArrayLab.max(data));
 		System.out.println("The minimum value in the array is: " + ArrayLab.min(data));
