@@ -19,7 +19,7 @@ public class RollingDiceSimulator {
 			int timesRolled = userInput.nextInt();
 			
 			
-			rollDice (timesRolled, new Random());
+			rollDice(timesRolled, new Random());
 			
 			System.out.println("Experiment concluded, would you like to continue? If so, Input any NUMBER other than '2'");
 			Scanner userInput2 = new Scanner(System.in);
