@@ -15,7 +15,21 @@ public class Driver {
 	System.out.println(c.perimeter());
 	System.out.println(c.area());
 	
-
+	Inheritance b = new Derived();
+	b.show();
+	Inheritance be = new Inheritance();
+	be.show();
+	
+	// The reason that derived is called is because object b is type Derived which included 
+	// the different string system out response even though it is apart of base class Inheritance
+	// It to get the first one to show up you would use new Inheritance();;
 	}
 
+
+	public class Main {
+		public static void main(String[] args) {
+			Inheritance b = new Derived();;
+			b.show();
+		}
+	}
 }
