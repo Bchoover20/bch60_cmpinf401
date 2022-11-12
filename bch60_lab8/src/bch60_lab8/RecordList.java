@@ -1,5 +1,14 @@
 package bch60_lab8;
 
+import java.awt.List;
+import java.io.BufferedReader;
+import java.io.Console;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+
+
 public class RecordList {
 
 
@@ -7,7 +16,10 @@ public class RecordList {
 	 * The node class represents a single list element with a data item and
 	 * reference to the next node in the list
 	 */
-	private class Node {
+	
+	private class Node { 
+		
+		
 		// data held by this node
 		Record data;
 		// reference to the next node in the list, or null if there is no such node
@@ -18,12 +30,39 @@ public class RecordList {
 		 * Creates a node with the given data
 		 * @param dataValue data to hold in this node
 		 */
+		
+	
 		public Node(Record dataValue) {
 			next = null ;
 			data = dataValue;
-			
+
 		}
 		
+		// node needs its on getters and setters
+		public Node getNext() {
+			// This is the link to the next node I dont know how thats possible since next is null
+			return next;
+			
+		}
+		// Getter for the data associated with a node
+		public Record getData() {
+			return data;
+		}
+		
+
+		// Setter for the data associated with a node
+		public void setData(Record dataValue) {
+			data = dataValue;
+		}
+		// another Node constructor if we want to specify the node to point to. 
+		// dont know if  I need to use this or not 
+		
+		
+		
+		public void setNext(Node nextValue) {
+			
+			next = nextValue;
+		}
 	}
 	
 	private Node head;
@@ -31,9 +70,10 @@ public class RecordList {
 	/**
 	 * Initializes a linked list with a single "dummy" node (contains no real data)
 	 * to simplify code for the case of an empty list
+	 * @param nx 
 	 */
 	public RecordList() {
-
+		// dummy linked list created, somehow I need to insert something before the dummy I think?
 		head = new Node(null);
 	}
 	
@@ -43,6 +83,7 @@ public class RecordList {
 	 * @return index of name in list if found, -1 otherwise
 	 */
 	public int indexOf(String name) {
+		
 		Node currentNode = head;
 		int index = 0;
 		
@@ -64,44 +105,52 @@ public class RecordList {
 	 * @return the index the data was inserted at
 	 */
 	
+	int index1=0;
+	int counter1=0;
+	int counter2=0;
+	int rightSpot=0;
+	ArrayList<Integer> timeData = new ArrayList<Integer>();
 	
 	public int add(Record data) {
-
+		
+		
+		// Insertion base code that is provided in the google slides
+		// Creating a type Node object that contains the data of the newest userInput that has been passed through
+		Node tempNode = new Node(data);
 		Node currentNode = head;
-		int index1=0;
+		// starting at the head node, crawl to the end of the list
 		
+		// Creating console object
+		Console cnsl = System.console();
 		
-	    if (currentNode != null) {
-		
-		while (currentNode.next != null && currentNode.next.data.getTime() <= currentNode.data.getTime()) {
-			currentNode = currentNode.next;
-			index1++;
-			System.out.println(currentNode.next.data.getName());
-			System.out.println("DID WE MAKE IT HERE IN THE CODE");
+		while (cnsl != null) {
+			String tempLine = cnsl.readLine();
 			
+			String[] splitLine = tempLine.split(",");
+			
+			// parse that int 
+			int tempInt = Integer.parseInt(splitLine[1]);
+			// Adding the time that has been split from splitLine
+			timeData.add(tempInt);
+			
+			for (int element : timeData) {
+				
+				if (timeData.get(element) < timeData.get(element+1)) {
+					rightSpot = element;
+				}
+			}
 		}
 		
-		//System.out.println("DID WE MAKE IT HERE IN THE CODE");
+		while (currentNode.getNext() != null && counter1 < rightSpot) {
+				currentNode = currentNode.getNext();
+				counter1++;
+			
+		}	
 		
-		// set the new node's next-node reference to this node's next-node reference
-		//tempNode.setNext(currentNode.getNext());
-		//currentNode
+			currentNode.setNext(tempNode);
+			index1++;
 		
-		// now set this node's next-node reference to the new node
-		//currentNode.setNext(tempNode);
-		
-		}
-		System.out.println(index1);
-		//System.out.println(currentNode.next.data.getName());
-		// Replace this with your own code. You can use the indexOf() method as a guide.
 		return index1;
-		
-		// traverse to place to insert node (i.e. get currentNode to be the one
-		// immediately before where we want to insert -- the last node with a strictly
-		// lower time)
-
-		
-		// add new node in the spot we've found
 	}
 	
 	/**
@@ -126,5 +175,7 @@ public class RecordList {
 		// Add your own code here to write out the list contents to a file. You can use
 		// our file writing examples and the print() method above as a guide.
 	}
+
+
 
 }

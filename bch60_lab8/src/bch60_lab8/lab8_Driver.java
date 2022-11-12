@@ -1,5 +1,6 @@
 package bch60_lab8;
 
+
 public class lab8_Driver {
 
 	public static void main(String[] args) {
@@ -28,7 +29,11 @@ public class lab8_Driver {
 				
 				// Add new record
 				Record r = new Record(name, time);
+				
+				list.print();
 				int result = list.add(r);
+				
+		
 				// Print out a message if this is new best time
 				if (result == 0) {
 					javax.swing.JOptionPane.showMessageDialog(null, "Congratulations! " + name + " has the fastest time so far");
