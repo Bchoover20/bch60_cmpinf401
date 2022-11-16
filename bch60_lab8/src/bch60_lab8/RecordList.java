@@ -1,16 +1,7 @@
 package bch60_lab8;
 
-import java.awt.List;
-import java.io.BufferedReader;
-import java.io.Console;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Scanner;
-
-
 
 public class RecordList {
-
 
 	/**
 	 * The node class represents a single list element with a data item and
@@ -18,7 +9,6 @@ public class RecordList {
 	 */
 	
 	private class Node { 
-		
 		
 		// data held by this node
 		Record data;
@@ -30,12 +20,9 @@ public class RecordList {
 		 * Creates a node with the given data
 		 * @param dataValue data to hold in this node
 		 */
-		
-	
 		public Node(Record dataValue) {
 			next = null ;
 			data = dataValue;
-
 		}
 		
 		// node needs its on getters and setters
@@ -44,21 +31,6 @@ public class RecordList {
 			return next;
 			
 		}
-		// Getter for the data associated with a node
-		public Record getData() {
-			return data;
-		}
-		
-
-		// Setter for the data associated with a node
-		public void setData(Record dataValue) {
-			data = dataValue;
-		}
-		// another Node constructor if we want to specify the node to point to. 
-		// dont know if  I need to use this or not 
-		
-		
-		
 		public void setNext(Node nextValue) {
 			
 			next = nextValue;
@@ -104,53 +76,40 @@ public class RecordList {
 	 * @param data data to add
 	 * @return the index the data was inserted at
 	 */
-	
 	int index1=0;
 	int counter1=0;
-	int counter2=0;
-	int rightSpot=0;
-	ArrayList<Integer> timeData = new ArrayList<Integer>();
 	
 	public int add(Record data) {
-		
-		
+			
 		// Insertion base code that is provided in the google slides
 		// Creating a type Node object that contains the data of the newest userInput that has been passed through
-		Node tempNode = new Node(data);
 		Node currentNode = head;
-		// starting at the head node, crawl to the end of the list
 		
-		// Creating console object
-		Console cnsl = System.console();
-		
-		while (cnsl != null) {
-			String tempLine = cnsl.readLine();
-			
-			String[] splitLine = tempLine.split(",");
-			
-			// parse that int 
-			int tempInt = Integer.parseInt(splitLine[1]);
-			// Adding the time that has been split from splitLine
-			timeData.add(tempInt);
-			
-			for (int element : timeData) {
-				
-				if (timeData.get(element) < timeData.get(element+1)) {
-					rightSpot = element;
-				}
-			}
+		// null checker to make sure the head of the linked list has data, so you are not just setting currentNode to null
+		if (currentNode == null) {
+			this.head = new Node(data);
+			return 0; // stopping add method because nothing else will work after the if-conditional
 		}
+		// Remember to use the object that is passed into the method if you are stuck 
 		
-		while (currentNode.getNext() != null && counter1 < rightSpot) {
+		
+		// Linked List iterator, that upon meeting parameters will iterate through the list until 
+		while (currentNode.getNext() != null && data.getTime() < currentNode.next.data.getTime()) {
 				currentNode = currentNode.getNext();
-				counter1++;
+				System.out.println(data.getTime());
 			
 		}	
+		/**
+		 *  This code block works as follows:
+		 *  A temporary comparrison node is declared and set to the next node in the list
+		 *  The next node of currentNode is than changed to a node data 
+		 */
+		 Node tempNode = currentNode.next;
+	     currentNode.next = new Node(data);
+	     currentNode.next.next = tempNode;
 		
-			currentNode.setNext(tempNode);
-			index1++;
-		
-		return index1;
+	     index1++;
+		 return index1;
 	}
 	
 	/**
