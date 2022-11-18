@@ -42,9 +42,9 @@ public class lab8_Driver {
 			}
 		} while (input != null);
 		
-		list.writeToFile("data/recordList.txt");
+		list.writeToFile("cd ..\\..\\RaceData\\RaceData.txt"); 
 		
-		 input = javax.swing.JOptionPane.showInputDialog("Enter the name of a participant to look up");
+		input = javax.swing.JOptionPane.showInputDialog("Enter the name of a participant to look up");
 		String name = input.trim();
 		int result = list.indexOf(name);
 		if (result == -1) {
