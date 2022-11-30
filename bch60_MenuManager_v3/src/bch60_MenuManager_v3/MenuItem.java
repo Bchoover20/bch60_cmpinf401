@@ -1,5 +1,7 @@
 package bch60_MenuManager_v3;
 
+import java.util.ArrayList;
+
 public class MenuItem {
 
 	String name;
@@ -12,13 +14,17 @@ public class MenuItem {
 	public MenuItem (String name, String description, int calories, double price) {
 		
 		// constructors are used to initialize the state of an object 
-		name = this.name;
-		description = this.description;
-		calories =  this.calories;
-		price =  this.price;
+		this.name = name;
+		this.description = description;
+		this.calories = calories;
+		this.price = price;
 
-		
+		// this.name <-- name
+		// this.description <-- description
+		// this.calories <-- calories 
+		// this.price <-- price
 	}
+	
 	
 	@Override
 	public String toString() {

@@ -63,24 +63,19 @@ public class FileManager {
 				tempCal = Integer.parseInt(dataCollector.get(cal));
 				tempPrice = Double.parseDouble(dataCollector.get(price));
 				
-	
-			
+				
 				// Use equals internal method when comparing two strings 
 				if (dataCollector.get(dishType).equals("entree")) {
-					Entree testMenu = new Entree(dataCollector.get(name), dataCollector.get(desc), tempCal, tempPrice);
-					menuItemList.add(testMenu);
+					menuItemList.add(new Entree(dataCollector.get(name), dataCollector.get(desc), tempCal, tempPrice));
 				}
 				else if (dataCollector.get(dishType).equals("side")) {
-					Side testMenu = new Side(dataCollector.get(name), dataCollector.get(desc), tempCal, tempPrice);
-					menuItemList.add(testMenu);
+					menuItemList.add(new Side(dataCollector.get(name), dataCollector.get(desc), tempCal, tempPrice));
 				}
 				else if (dataCollector.get(dishType).equals("salad")) {
-					Salad testMenu = new Salad(dataCollector.get(name), dataCollector.get(desc), tempCal, tempPrice);
-					menuItemList.add(testMenu);
+					menuItemList.add(new Salad(dataCollector.get(name), dataCollector.get(desc), tempCal, tempPrice));
 				}
 				else if (dataCollector.get(dishType).equals("dessert")) {
-					Dessert testMenu = new Dessert(dataCollector.get(name), dataCollector.get(desc), tempCal, tempPrice);
-					menuItemList.add(testMenu);
+					menuItemList.add(new Dessert(dataCollector.get(name), dataCollector.get(desc), tempCal, tempPrice));
 				}
 				else {
 					System.out.println(dataCollector.get(dishType));
@@ -93,7 +88,9 @@ public class FileManager {
 				desc = (desc + 5);
 				cal = (cal + 5);
 				price = (price + 5);
-
+				
+				//System.out.println(menuItemList.get(counter2).toString() + counter2);
+				
 				counter2++;
 			}
 			fr.close();
@@ -107,6 +104,7 @@ public class FileManager {
 		
 	}
 	
+	
 	/*
 	public static void writeMenus (String filename, ArrayList<Menu> menus) {
 		
@@ -117,7 +115,7 @@ public class FileManager {
 			FileWriter fw = new FileWriter(path);
 			BufferedWriter bw = new BufferedWriter(fw); 
 
-			bw.write(menus.getName() + "," + menus.getdishesType + "," + menus.get);
+			bw.write(menu.get() + "," + menus.getdishesType + "," + menus.get);
 			System.out.println(menus.get(0));
 			
 			for (Menu element : menus) {
