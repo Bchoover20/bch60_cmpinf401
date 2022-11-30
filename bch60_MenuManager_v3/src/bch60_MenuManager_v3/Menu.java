@@ -44,16 +44,18 @@ public class Menu {
 		return name;
 	}
 	
-	/*
-	 * I am curious why at first it was requiring that I make everything static for totalCalories
-	 * I was able to get it to work without doing so but would be interested in learning more about this concept
-	 */
 	
 	/*
 	 * I realize that there is a major error with this method but it fortunately still works
 	 * Basically entree, side, and salad, and dessert, are always going to be null because when you are comparing them,
 	 * they are object type data so there is nothing to compare. Which makes the if conditionals useless
 	 */
+	
+	/**
+	 * Method totalCalories
+	 * @return returns the total calories of one of the randomly generated menus contained within ArrayList menus
+	 */
+	
 	int totalCalories () {
 		int entreeCal=0;
 		int sideCal=0;
@@ -76,6 +78,11 @@ public class Menu {
 		int totalCal= entreeCal + sideCal + saladCal + dessertCal;
 		return totalCal;
 	}
+	
+	/**
+	 * Method totalPrice
+	 * @return returns the total price of one of the randomly generated menus contained within ArrayList menus
+	 */
 	
 	double totalPrice() {
 		double entreePrice=entree.price;
