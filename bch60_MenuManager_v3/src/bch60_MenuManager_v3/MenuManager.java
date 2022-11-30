@@ -84,15 +84,16 @@ public class MenuManager {
 		ArrayList<Menu> menus = new ArrayList<Menu>();
 		
 		
+		System.out.println("Please input the number of Menus that you would like to create");
 		
-		Menu testMenu = randomMenu("A surprise");
-		 
-		 //System.out.println(testMenu.getSalad());
-		menus.add(testMenu); // .get(index) .add(object)
-		 //System.out.println(menus.get(0).getEntree().description);
-		// menus.a(testMenu.getName(), testMenu.getEntree(), testMenu.getSide(), testMenu.getSalad(), testMenu.getDessert());
-		 FileManager.writeMenus("cd ..\\..\\data\\WritingMenus.txt", menus);
-		
+		for (int i=0; i<3; i++) {
+		Menu testMenu = randomMenu("Menu " + (i+1));
+			//System.out.println(testMenu.getSalad());
+			menus.add(testMenu); // .get(index) .add(object)
+			 //System.out.println(menus.get(0).getEntree().description);
+			// menus.a(testMenu.getName(), testMenu.getEntree(), testMenu.getSide(), testMenu.getSalad(), testMenu.getDessert());
+			 FileManager.writeMenus("cd ..\\..\\data\\WritingMenus.txt", menus);
+		}
 	}
 
 

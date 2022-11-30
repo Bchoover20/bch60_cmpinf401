@@ -119,7 +119,7 @@ public class FileManager {
 			for (int i=0; i<menus.size(); i++) {
 				
 				//System.out.println(menus.get(i).toString());
-				bw.write(menus.get(i).toString());
+				bw.write(menus.get(i).getName() + "," + menus.get(i).getEntree() + "," + menus.get(i).getSide() + "," + menus.get(i).getSalad() + "," + menus.get(i).getDessert()+ "\n");
 				
 			}
 
