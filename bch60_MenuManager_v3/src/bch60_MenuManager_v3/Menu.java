@@ -1,10 +1,10 @@
 package bch60_MenuManager_v3;
-/*
+
 /**
  * Class: Menu
  * @author Brandon Hoover
  * Created: 10/7/2022
- 
+*/
 public class Menu {
 
 	private String name;
@@ -13,18 +13,20 @@ public class Menu {
 	private Salad salad;
 	private Dessert dessert;
 
+	
 	public Menu(String name){ // Do I need to pass String name through here
 		entree=null;
 		side=null;
 		salad=null;
 		dessert=null;
 	}
-
+	
 	public Menu (String name, Entree entree, Side side) {
 		this.name=name;
 		this.entree=entree;
 		this.side=side;
 	}
+	
 
 	public Menu (String name, Entree entree, Side side, Salad salad, Dessert dessert) {
 		this.name=name;
@@ -41,7 +43,7 @@ public class Menu {
 	}
 	
 	
-	
+	/*
 	int totalCalories () {
 		int entreeCal=0;
 		int sideCal=0;
@@ -64,6 +66,7 @@ public class Menu {
 		int totalCal= entreeCal + sideCal + saladCal + dessertCal;
 		return totalCal;
 	}
+	
 
 	String description() {
 
@@ -89,6 +92,7 @@ public class Menu {
 
 		return totalDesc;
 	}
+	*/
 
 	public String getName() {
 		return name;
@@ -133,4 +137,3 @@ public class Menu {
 
 
 }
-*/

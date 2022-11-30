@@ -89,7 +89,7 @@ public class FileManager {
 				cal = (cal + 5);
 				price = (price + 5);
 				
-				//System.out.println(menuItemList.get(counter2).toString() + counter2);
+				// Verificiation check System.out.println(menuItemList.get(counter2).toString() + counter2);
 				
 				counter2++;
 			}
@@ -105,7 +105,7 @@ public class FileManager {
 	}
 	
 	
-	/*
+	// Why does everything have to be static for one thing to be static 
 	public static void writeMenus (String filename, ArrayList<Menu> menus) {
 		
 		String path = filename;
@@ -114,13 +114,12 @@ public class FileManager {
 		
 			FileWriter fw = new FileWriter(path);
 			BufferedWriter bw = new BufferedWriter(fw); 
-
-			bw.write(menu.get() + "," + menus.getdishesType + "," + menus.get);
-			System.out.println(menus.get(0));
+	
 			
-			for (Menu element : menus) {
+			for (int i=0; i<menus.size(); i++) {
 				
-				//bw.write("this is it");
+				//System.out.println(menus.get(i).toString());
+				bw.write(menus.get(i).toString());
 				
 			}
 
@@ -134,7 +133,7 @@ public class FileManager {
 			
 		}
 	}
-	*/	
+	
 
 }
 

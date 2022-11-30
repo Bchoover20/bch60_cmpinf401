@@ -15,13 +15,15 @@ public class MenuManager {
 	public MenuManager (String dishesFile) {
 		
 		if (dishesFile==null) {
-			dishesFile = "dishes.txt";
+			dishesFile = "cd ..\\..\\data\\dishes.txt";
 		}
 		/*
 		dishesFile = "dishes.txt";
 		usingReadItems(dishesFile);
+		
+		MenuManager.usingReadItems("cd ..\\..\\data\\dishes.txt");
+		randomMenu("A beutiful surprise");
 		*/
-	
 	}
 	
 	
@@ -33,35 +35,31 @@ public class MenuManager {
 		//FileManager fileManager = new FileManager();
 		returnedList = FileManager.readItems(path);
 		
-		System.out.println(returnedList.get(0));
+		//System.out.println(returnedList.get(0));
 		
 		
 
 		int counter=0;
 		for (MenuItem element : returnedList) {
 			
-			System.out.println(element);
 		//	String typeClass = thefile.getClass();
 		//	System.out.println(thefile.get(counter).getClass().toString());
 			
 			if (returnedList.get(counter).getClass().toString().equals("class bch60_MenuManager_v3.Entree")) {
-				
-				System.out.println("Sucess! its an entree " + (counter+1));
+				//System.out.println("Sucess! its an entree " + (counter+1));
 					entrees.add((Entree) element);
 			}
 			else if (returnedList.get(counter).getClass().toString().equals("class bch60_MenuManager_v3.Side")) {
-				System.out.println("success! its a side " + counter);
+				//System.out.println("success! its a side " + counter);
 					sides.add((Side) element);
 			}
 			else if (returnedList.get(counter).getClass().toString().equals("class bch60_MenuManager_v3.Salad")) {
-				System.out.println("success! its a salad " + counter);
+				//System.out.println("success! its a salad " + counter);
 					salads.add((Salad) element);
 			}
 			else if (returnedList.get(counter).getClass().toString().equals("class bch60_MenuManager_v3.Dessert")) {
-				
-				System.out.println("success! its a dessert " + counter);
+				//System.out.println("success! its a dessert " + counter);
 					desserts.add((Dessert) element);
-					//System.out.println(entrees);
 			}
 			else {
 				System.out.println("OOPS" + counter);
@@ -69,38 +67,50 @@ public class MenuManager {
 			
 			counter++;
 		}
-		
+		/* Verification Checks
 		for (Entree element : entrees) {
-			System.out.println(element);
+			System.out.println(element.description);
 		}
 		for (Side element : sides) {
 			System.out.println(element);
 		}
+		*/ 
 	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
 		MenuManager.usingReadItems("cd ..\\..\\data\\dishes.txt");
-	
+		ArrayList<Menu> menus = new ArrayList<Menu>();
+		
+		
+		
+		Menu testMenu = randomMenu("A surprise");
+		 
+		 //System.out.println(testMenu.getSalad());
+		menus.add(testMenu); // .get(index) .add(object)
+		 //System.out.println(menus.get(0).getEntree().description);
+		// menus.a(testMenu.getName(), testMenu.getEntree(), testMenu.getSide(), testMenu.getSalad(), testMenu.getDessert());
+		 FileManager.writeMenus("cd ..\\..\\data\\WritingMenus.txt", menus);
+		
 	}
 
-/*
-	public Menu randomMenu() {
+
+	public static Menu randomMenu(String name) {
 
 		Random randoNum = new Random();
 
-		int entreeRandoNum = randoNum.nextInt(5);
-		int	sideRandoNum = randoNum.nextInt(5);
-		int saladRandoNum = randoNum.nextInt(5);
-		int dessertRandoNum = randoNum.nextInt(5);
+		int entreeRandoNum = randoNum.nextInt(4);
+		int	sideRandoNum = randoNum.nextInt(4);
+		int saladRandoNum = randoNum.nextInt(4);
+		int dessertRandoNum = randoNum.nextInt(4);
 
-		Menu randomizedMenu = new Menu("Menu Name" , entrees.get(entreeRandoNum),sides.get(sideRandoNum), salads.get(saladRandoNum), desserts.get(dessertRandoNum));
+		Menu randomizedMenu = new Menu(name , entrees.get(entreeRandoNum),sides.get(sideRandoNum), salads.get(saladRandoNum), desserts.get(dessertRandoNum));
 
-		//System.out.println(Menu);//
+		
 		return randomizedMenu;
 	}
-*/
+
 	
 
 }
