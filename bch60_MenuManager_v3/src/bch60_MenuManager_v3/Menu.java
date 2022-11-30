@@ -15,6 +15,12 @@ public class Menu {
 	private Dessert dessert;
 
 	
+	/**
+	 * Constructor Menu
+	 * @param String name  - The name of the menu object that is being created
+	 * @return no return for a constructor 
+	 */
+	
 	public Menu(String name){ 
 		entree=null;
 		side=null;
@@ -22,13 +28,28 @@ public class Menu {
 		dessert=null;
 	}
 	
+	/**
+	 * Constructor Menu
+	 * @param String name  - The name of the menu object that is being created
+	 * @param Entree entree - Entree Item that is being used in the menu Object
+	 * @param Side side - Side Item that is being used in the menu Object
+	 * @return no return for a constructor
+	 */
+	
 	public Menu (String name, Entree entree, Side side) {
 		this.name=name;
 		this.entree=entree;
 		this.side=side;
 	}
-	
-
+	/**
+	 * Constructor Menu
+	 * @param String name  - The name of the menu object that is being created
+	 * @param Entree entree - Entree item that is being used in the menu Object
+	 * @param Side side - Side item that is being used in the menu Object
+	 * @param Salad salad - Salad item that is being used in the menu Object
+	 * @param Dessert dessert - Dessert item that is being used in the menu Object
+	 * @return no return for a constructor
+	 */
 	
 	public Menu (String name, Entree entree, Side side, Salad salad, Dessert dessert) {
 		this.name=name;
@@ -93,6 +114,7 @@ public class Menu {
 		double totalPrice = entreePrice + sidePrice + saladPrice + dessertPrice;
 		return totalPrice;
 	}
+	
 	/*
 
 	String description() {
