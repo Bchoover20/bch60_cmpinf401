@@ -1,3 +1,21 @@
-Menu 1,Alaskan Wild-Caught Salmon,Apple Rice Pilaf,Caesar Salad,Key Lime Pie
-Menu 2,Spicy Southern Burger,Grilled Asparagus,Nicoise Salad,Creme Brulee
-Menu 3,Beef Wellington,Corn on the Cob,Greek Salad,Pecan Pie
+Menu 1---------------------
+Beef Wellington@@Perfectly cooked Steak coated in seasoning then wrapped in a cooked pastry dough@@680@@18.5
+Grilled Asparagus@@Lightly salted asparagus brazed with olive oil@@100@@0.0
+Greek Salad@@Primarily consists of tomatoes, cucumbers, olives, and feta cheese@@100@@3.25
+Pecan Pie@@Chocolate filling covered in pecan nuts with a hint of whip cream all on a thin pie crust@@405@@5.75
+The total calories for this menu is: 1285
+The total price for this menu is: 27.5
+Menu 2---------------------
+Savory Scallops@@Beautifully seared scallops dashed with lemon pepper and coastal herbs@@365@@12.3
+Apple Rice Pilaf@@English Rice dish sprinkled with apples, pecans and cranberry's@@300@@0.0
+Nicoise Salad@@consists of tomatoes, hard boiled eggs, anchovies, and Nicoise olives@@140@@0.0
+Creme Brulee@@A rich creamy vanilla custard base sealed by a layer of hardened caramelized sugar@@410@@9.0
+The total calories for this menu is: 1215
+The total price for this menu is: 21.3
+Menu 3---------------------
+Alaskan Wild-Caught Salmon@@An entire salmon smoked for hours topped with fresh lemon slices and a relish-mayo infused tarter sauce@@610@@17.0
+Grilled Asparagus@@Lightly salted asparagus brazed with olive oil@@100@@0.0
+Caesar Salad@@RomaneLettuce, cruncy croutons, and light dusting of parmesan@@105@@2.85
+Dirt Dessert@@A vanilla cream pudding seperated by layers of oreos with little gummy worms on top@@390@@3.75
+The total calories for this menu is: 1205
+The total price for this menu is: 23.6

@@ -7,6 +7,7 @@ package bch60_MenuManager_v3;
 */
 public class Menu {
 
+	
 	private String name;
 	private Entree entree;
 	private Side side;
@@ -14,7 +15,7 @@ public class Menu {
 	private Dessert dessert;
 
 	
-	public Menu(String name){ // Do I need to pass String name through here
+	public Menu(String name){ 
 		entree=null;
 		side=null;
 		salad=null;
@@ -28,6 +29,7 @@ public class Menu {
 	}
 	
 
+	
 	public Menu (String name, Entree entree, Side side, Salad salad, Dessert dessert) {
 		this.name=name;
 		this.entree=entree;
@@ -42,8 +44,16 @@ public class Menu {
 		return name;
 	}
 	
+	/*
+	 * I am curious why at first it was requiring that I make everything static for totalCalories
+	 * I was able to get it to work without doing so but would be interested in learning more about this concept
+	 */
 	
 	/*
+	 * I realize that there is a major error with this method but it fortunately still works
+	 * Basically entree, side, and salad, and dessert, are always going to be null because when you are comparing them,
+	 * they are object type data so there is nothing to compare. Which makes the if conditionals useless
+	 */
 	int totalCalories () {
 		int entreeCal=0;
 		int sideCal=0;
@@ -51,22 +61,32 @@ public class Menu {
 		int dessertCal=0;
 
 		if (entree != null) {
-			entreeCal = entree.getCalories();
+			entreeCal = entree.calories;
 		}
 		if (side != null) {
-			sideCal = side.getCalories();
+			sideCal = side.calories;
 		}
 		if (salad != null) {
-			saladCal = salad.getCalories();
+			saladCal = salad.calories;
 		}
 		if (dessert != null) {
-			dessertCal = dessert.getCalories();
+			dessertCal = dessert.calories;
 		}
 
 		int totalCal= entreeCal + sideCal + saladCal + dessertCal;
 		return totalCal;
 	}
 	
+	double totalPrice() {
+		double entreePrice=entree.price;
+		double sidePrice=side.price;
+		double saladPrice=salad.price;
+		double dessertPrice=dessert.price;
+		
+		double totalPrice = entreePrice + sidePrice + saladPrice + dessertPrice;
+		return totalPrice;
+	}
+	/*
 
 	String description() {
 

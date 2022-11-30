@@ -87,15 +87,16 @@ public class MenuManager {
 		System.out.println("Please input the number of Menus that you would like to create");
 		
 		for (int i=0; i<3; i++) {
-		Menu testMenu = randomMenu("Menu " + (i+1));
-			//System.out.println(testMenu.getSalad());
+			Menu testMenu = randomMenu("Menu " + (i+1));
 			menus.add(testMenu); // .get(index) .add(object)
-			 //System.out.println(menus.get(0).getEntree().description);
-			// menus.a(testMenu.getName(), testMenu.getEntree(), testMenu.getSide(), testMenu.getSalad(), testMenu.getDessert());
-			 FileManager.writeMenus("cd ..\\..\\data\\WritingMenus.txt", menus);
+			FileManager.writeMenus("cd ..\\..\\data\\WritingMenus.txt", menus);
 		}
 	}
-
+	// Verification Checks
+	//System.out.println(testMenu.getSalad());
+	//System.out.println(menus.get(0).getEntree().description);
+	//menus.a(testMenu.getName(), testMenu.getEntree(), testMenu.getSide(), 
+	//testMenu.getSalad(), testMenu.getDessert());
 
 	public static Menu randomMenu(String name) {
 
@@ -111,6 +112,11 @@ public class MenuManager {
 		
 		return randomizedMenu;
 	}
+	
+	/*
+	 * I implemented the total Calories from 
+	 */
+	
 
 	
 

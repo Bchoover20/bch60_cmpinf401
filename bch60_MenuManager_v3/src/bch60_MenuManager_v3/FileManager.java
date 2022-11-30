@@ -106,6 +106,8 @@ public class FileManager {
 	
 	
 	// Why does everything have to be static for one thing to be static 
+	
+	
 	public static void writeMenus (String filename, ArrayList<Menu> menus) {
 		
 		String path = filename;
@@ -119,8 +121,17 @@ public class FileManager {
 			for (int i=0; i<menus.size(); i++) {
 				
 				//System.out.println(menus.get(i).toString());
-				bw.write(menus.get(i).getName() + "," + menus.get(i).getEntree() + "," + menus.get(i).getSide() + "," + menus.get(i).getSalad() + "," + menus.get(i).getDessert()+ "\n");
+				bw.write(menus.get(i).getName() + "---------------------\n");
+				bw.write(menus.get(i).getEntree().name + "@@" + menus.get(i).getEntree().description + "@@" + menus.get(i).getEntree().calories + "@@" + menus.get(i).getEntree().price + "\n");
+				bw.write(menus.get(i).getSide().name + "@@" + menus.get(i).getSide().description + "@@" + menus.get(i).getSide().calories + "@@" + menus.get(i).getSide().price + "\n");
+				bw.write(menus.get(i).getSalad().name + "@@" + menus.get(i).getSalad().description + "@@" + menus.get(i).getSalad().calories + "@@" + menus.get(i).getSalad().price + "\n");
+				bw.write(menus.get(i).getDessert().name + "@@" + menus.get(i).getDessert().description + "@@" + menus.get(i).getDessert().calories + "@@" + menus.get(i).getDessert().price + "\n");
 				
+			
+				int totalCal = menus.get(i).totalCalories(); // good call look at you implementing methods
+				double totalPri = menus.get(i).totalPrice();
+				bw.write("The total calories for this menu is: " + totalCal + "\n");
+				bw.write("The total price for this menu is: " + totalPri + "\n");
 			}
 
 
@@ -129,7 +140,7 @@ public class FileManager {
 		}
 		catch (IOException e){
 			System.out.println(e);
-			System.out.println("Big bruh moement");
+			System.out.println("Error ocurred in method writeMenus try\\catch");
 			
 		}
 	}
