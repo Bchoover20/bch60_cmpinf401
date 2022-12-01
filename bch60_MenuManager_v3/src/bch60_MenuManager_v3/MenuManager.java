@@ -77,23 +77,7 @@ public class MenuManager {
 		}
 
 	}
-/*
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		ArrayList<Menu> menus = new ArrayList<Menu>();
-
-		MenuManager.usingReadItems("cd ..\\..\\data\\dishes.txt");
-		
-		System.out.println("Please input the number of Menus that you would like to create");
-
-		for (int i=0; i<3; i++) {
-			Menu testMenu = randomMenu("Menu " + (i+1));
-			menus.add(testMenu); // .get(index) .add(object)
-			FileManager.writeMenus("cd ..\\..\\data\\WritingMenus.txt", menus);
-		}
-	}
-*/
 	/**
 	 * Method randomMenu
 	 * @param String name - name of the menu that is going to be randomly generated
