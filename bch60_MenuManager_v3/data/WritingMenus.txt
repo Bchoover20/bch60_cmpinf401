@@ -1,21 +1,14 @@
 Menu 1---------------------
-Beef Wellington@@Perfectly cooked Steak coated in seasoning then wrapped in a cooked pastry dough@@680@@18.5
-Grilled Asparagus@@Lightly salted asparagus brazed with olive oil@@100@@0.0
-Nicoise Salad@@consists of tomatoes, hard boiled eggs, anchovies, and Nicoise olives@@140@@0.0
-Key Lime Pie@@A classic fluffy, airy, dessert topped with whip-cream@@290@@5.0
-The total calories for this menu is: 1210
-The total price for this menu is: 23.5
-Menu 2---------------------
-Alaskan Wild-Caught Salmon@@An entire salmon smoked for hours topped with fresh lemon slices and a relish-mayo infused tarter sauce@@610@@17.0
-Corn on the Cob@@A full husk of corn that is buttered and seasoned with salt and pepper to your hearts delight@@380@@0.0
-Pasta Salad@@Hand picked Grapes, some hard-boiled eggs, and a pickle@@120@@2.5
-Pecan Pie@@Chocolate filling covered in pecan nuts with a hint of whip cream all on a thin pie crust@@405@@5.75
-The total calories for this menu is: 1515
-The total price for this menu is: 25.25
-Menu 3---------------------
 Savory Scallops@@Beautifully seared scallops dashed with lemon pepper and coastal herbs@@365@@12.3
-French Fries@@A helping of tasty beer-battered fries@@275@@0.0
+Corn on the Cob@@A full husk of corn that is buttered and seasoned with salt and pepper to your hearts delight@@380@@0.0
+Nicoise Salad@@consists of tomatoes, hard boiled eggs, anchovies, and Nicoise olives@@140@@0.0
+Pecan Pie@@Chocolate filling covered in pecan nuts with a hint of whip cream all on a thin pie crust@@405@@5.75
+The total calories for this menu is: 1290
+The total price for this menu is: 18.05
+Menu 2---------------------
+Beef Wellington@@Perfectly cooked Steak coated in seasoning then wrapped in a cooked pastry dough@@680@@18.5
+Corn on the Cob@@A full husk of corn that is buttered and seasoned with salt and pepper to your hearts delight@@380@@0.0
 Greek Salad@@Primarily consists of tomatoes, cucumbers, olives, and feta cheese@@100@@3.25
-Creme Brulee@@A rich creamy vanilla custard base sealed by a layer of hardened caramelized sugar@@410@@9.0
-The total calories for this menu is: 1150
-The total price for this menu is: 24.55
+Key Lime Pie@@A classic fluffy, airy, dessert topped with whip-cream@@290@@5.0
+The total calories for this menu is: 1450
+The total price for this menu is: 26.75

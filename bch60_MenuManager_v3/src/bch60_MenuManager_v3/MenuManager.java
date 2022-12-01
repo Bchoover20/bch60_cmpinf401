@@ -3,6 +3,8 @@ package bch60_MenuManager_v3;
 import java.util.ArrayList;
 import java.util.Random;
 
+
+
 /**
  * Class: MenuManager
  * @author Brandon Hoover
@@ -11,10 +13,10 @@ import java.util.Random;
 
 public class MenuManager {
 
-	static ArrayList<Entree> entrees = new ArrayList<Entree>();
-	static ArrayList<Side> sides = new ArrayList<Side>();
-	static ArrayList<Salad> salads = new ArrayList<Salad>();
-	static ArrayList<Dessert> desserts = new ArrayList<Dessert>();
+	private static ArrayList<Entree> entrees = new ArrayList<Entree>();
+	private static ArrayList<Side> sides = new ArrayList<Side>();
+	private static ArrayList<Salad> salads = new ArrayList<Salad>();
+	private static ArrayList<Dessert> desserts = new ArrayList<Dessert>();
 
 	// IMPORTANT --- The Sides are included into the meal at no extra cost because the entrees themselves are so expensive
 
@@ -29,6 +31,8 @@ public class MenuManager {
 		if (dishesFile==null) {
 			dishesFile = "cd ..\\..\\data\\dishes.txt";
 		}
+		
+		usingReadItems(dishesFile);
 
 	}
 
@@ -40,7 +44,7 @@ public class MenuManager {
 	 * @return no return as it is void
 	 */
 
-	public static void usingReadItems (String filename) {
+	public void usingReadItems (String filename) {
 
 		ArrayList<MenuItem> returnedList = new ArrayList<MenuItem>();
 
@@ -73,14 +77,14 @@ public class MenuManager {
 		}
 
 	}
-
+/*
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		MenuManager.usingReadItems("cd ..\\..\\data\\dishes.txt");
 		ArrayList<Menu> menus = new ArrayList<Menu>();
 
-
+		MenuManager.usingReadItems("cd ..\\..\\data\\dishes.txt");
+		
 		System.out.println("Please input the number of Menus that you would like to create");
 
 		for (int i=0; i<3; i++) {
@@ -89,7 +93,7 @@ public class MenuManager {
 			FileManager.writeMenus("cd ..\\..\\data\\WritingMenus.txt", menus);
 		}
 	}
-
+*/
 	/**
 	 * Method randomMenu
 	 * @param String name - name of the menu that is going to be randomly generated
@@ -137,10 +141,13 @@ public class MenuManager {
 
 	/*
 	 * Verification within method UsingReadItems
+	 * If one thing is static then it seems like it all has to be static within the file
 	 * System.out.println(returnedList.get(0));
 	 * String typeClass = thefile.getClass();
 	 * System.out.println(thefile.get(counter).getClass().toString());
 	 */
+	
+	
 
 
 }
