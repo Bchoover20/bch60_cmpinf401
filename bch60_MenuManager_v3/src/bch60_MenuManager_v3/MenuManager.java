@@ -99,6 +99,120 @@ public class MenuManager {
 
 		return randomizedMenu;
 	}
+	
+	public static Menu maxCaloriesMenu(String name) {
+		int calSaver=0;
+		int entreeIndex = 0;
+		int sideIndex = 0;
+		int saladIndex = 0;
+		int dessertIndex = 0;
+		
+		
+		for (int i=0; i<entrees.size(); i++) {
+			if (entrees.get(i).calories > calSaver ) {
+				calSaver = entrees.get(i).calories;
+			}
+		}
+		for (int i=0; i<entrees.size(); i++) {
+			if (entrees.get(i).calories == calSaver ) {
+				 entreeIndex = i;
+			}
+		}
+		calSaver = 0;
+		for (int i=0; i<sides.size(); i++) {
+			if (sides.get(i).calories > calSaver ) {
+				calSaver = sides.get(i).calories;
+			}
+		}
+		for (int i=0; i<sides.size(); i++) {
+			if (sides.get(i).calories == calSaver ) {
+				 sideIndex = i;
+			}
+		}
+		calSaver = 0;
+		for (int i=0; i<salads.size(); i++) {
+			if (salads.get(i).calories > calSaver ) {
+				calSaver =	salads.get(i).calories;
+			}
+		}
+		for (int i=0; i<salads.size(); i++) {
+			if (salads.get(i).calories == calSaver ) {
+				 saladIndex = i;
+			}
+		}
+		calSaver = 0;
+		for (int i=0; i<desserts.size(); i++) {
+			if (desserts.get(i).calories > calSaver ) {
+				calSaver = desserts.get(i).calories;
+			}
+		}
+		for (int i=0; i<desserts.size(); i++) {
+			if (desserts.get(i).calories == calSaver ) {
+				 dessertIndex = i;
+			}
+		}
+		
+		Menu maxCal = new Menu("The highest Calorie Menu: ", entrees.get(entreeIndex), sides.get(sideIndex), salads.get(saladIndex), desserts.get(dessertIndex));
+		
+		return maxCal;
+	}
+	
+	public static Menu minCaloriesMenu(String name) {
+		int calSaver=2000; // Must be very large to get the if conditional iterator to properly start
+		int entreeIndex = 0;
+		int sideIndex = 0;
+		int saladIndex = 0;
+		int dessertIndex = 0;
+		
+		
+		for (int i=0; i<entrees.size(); i++) {
+			if (entrees.get(i).calories < calSaver ) {
+				calSaver = entrees.get(i).calories;
+			}
+		}
+		for (int i=0; i<entrees.size(); i++) {
+			if (entrees.get(i).calories == calSaver ) {
+				 entreeIndex = i;
+			}
+		}
+		calSaver = 2000;
+		for (int i=0; i<sides.size(); i++) {
+			if (sides.get(i).calories < calSaver ) {
+				calSaver = sides.get(i).calories;
+			}
+		}
+		for (int i=0; i<sides.size(); i++) {
+			if (sides.get(i).calories == calSaver ) {
+				 sideIndex = i;
+			}
+		}
+		calSaver = 2000;
+		for (int i=0; i<salads.size(); i++) {
+			if (salads.get(i).calories < calSaver ) {
+				calSaver =	salads.get(i).calories;
+			}
+		}
+		for (int i=0; i<salads.size(); i++) {
+			if (salads.get(i).calories == calSaver ) {
+				 saladIndex = i;
+			}
+		}
+		calSaver = 2000;
+		for (int i=0; i<desserts.size(); i++) {
+			if (desserts.get(i).calories < calSaver ) {
+				calSaver = desserts.get(i).calories;
+			}
+		}
+		for (int i=0; i<desserts.size(); i++) {
+			if (desserts.get(i).calories == calSaver ) {
+				 dessertIndex = i;
+			}
+		}
+		
+		Menu minCal = new Menu("The lowest Calorie Menu: ", entrees.get(entreeIndex), sides.get(sideIndex), salads.get(saladIndex), desserts.get(dessertIndex));
+		
+		return minCal;
+	}
 
 	// Verification Checks
 	//System.out.println(testMenu.getSalad());
