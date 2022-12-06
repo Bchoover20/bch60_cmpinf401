@@ -34,12 +34,6 @@ public class Recursion {
 		int task1Answer = sumOfDigits(340);
 		System.out.println(task1Answer); 
 
-		/*
-		 * Did that take too long to figure out? You didnt get too stuck on
-		 * one thing or another except maybe for getting tempSum to work but figuring out alternatives
-		 * got you to solve the puzzle
-		 * remember to try to not dwell on one solution for too long 
-		 */
 
 		System.out.println("Second Task, printArray: ");
 		printArray(arr,index);
