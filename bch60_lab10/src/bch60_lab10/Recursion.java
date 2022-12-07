@@ -26,7 +26,7 @@ public class Recursion {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int [] arr = {1,2,3,4,5,6};
+		int [] numArray = {1,2,3,4,5,6};
 		int index = 0;
 
 		System.out.println("First Task, sumofDigitsRecursive: ");
@@ -36,7 +36,7 @@ public class Recursion {
 
 
 		System.out.println("Second Task, printArray: ");
-		printArray(arr,index);
+		printArray(numArray,index);
 		
 		System.out.println("Third Task, printCombos:");
 		
