@@ -48,20 +48,20 @@ public class Recursion {
 	}
 
 
-	static void printArray(int[] arr, int index) {
+	static void printArray(int[] numArray, int index) {
 
 		// you need a temporary argument to pass through 
 
-		if (index == arr.length) { // checks to make sure that it does not call 
+		if (index == numArray.length) { // checks to make sure that it does not call 
 			return;
 		}
 		// for loops have to keep track of its own state 
 		// its hard to think about and slower than a for loop
 		// stuff with arrays dont use recursion back tracking use recursion
 
-		System.out.println(arr[index]);
+		System.out.println(numArray[index]);
 
-		printArray(arr,(index+1));
+		printArray(numArray,(index+1));
 		
 	}
 
