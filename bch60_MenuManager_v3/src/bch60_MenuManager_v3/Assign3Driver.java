@@ -28,6 +28,10 @@ public class Assign3Driver {
 			Menu testMenu = MenuManager.randomMenu("Menu " + (i+1));
 			menus.add(testMenu); // .get(index) .add(object)
 			FileManager.writeMenus("cd ..\\..\\data\\WritingMenus.txt", menus);
+			
+			// if you are non static you need to call it with a new instance
+			// if you are static you DONT need to call it with a new instance 
+			// System.out.println its attatched to the system 
 		}
 		
 		System.out.println("\n\nIf you are curious, the HIGHEST calorie menu that can be generated is the one shown below \n");

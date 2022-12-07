@@ -214,6 +214,42 @@ public class MenuManager {
 		return minCal;
 	}
 
+	public ArrayList<Entree> getEntrees() {
+		return entrees;
+	}
+
+	public void setEntrees(ArrayList<Entree> entrees) {
+		MenuManager.entrees = entrees;
+	}
+
+	public ArrayList<Side> getSides() {
+		return sides;
+	}
+
+	public void setSides(ArrayList<Side> sides) {
+		MenuManager.sides = sides;
+	}
+
+	public ArrayList<Salad> getSalads() {
+		return salads;
+	}
+
+	public void setSalads(ArrayList<Salad> salads) {
+		MenuManager.salads = salads;
+	}
+
+	public ArrayList<Dessert> getDesserts() {
+		return desserts;
+	}
+
+	public void setDesserts(ArrayList<Dessert> desserts) {
+		MenuManager.desserts = desserts;
+	}
+
+	
+
+	
+	
 	// Verification Checks
 	//System.out.println(testMenu.getSalad());
 	//System.out.println(menus.get(0).getEntree().description);

@@ -1,28 +1,63 @@
 Menu 1---------------------
-Alaskan Wild-Caught Salmon@@An entire salmon smoked for hours topped with fresh lemon slices and a relish-mayo infused tarter sauce@@610@@17.0
-Corn on the Cob@@A full husk of corn that is buttered and seasoned with salt and pepper to your hearts delight@@380@@0.0
-Nicoise Salad@@consists of tomatoes, hard boiled eggs, anchovies, and Nicoise olives@@140@@0.0
-Dirt Dessert@@A vanilla cream pudding seperated by layers of oreos with little gummy worms on top@@390@@3.75
-The total calories for this menu is: 1520
-The total price for this menu is: 20.75
+Savory Scallops@@Beautifully seared scallops dashed with lemon pepper and coastal herbs@@365@@12.3
+Apple Rice Pilaf@@English Rice dish sprinkled with apples, pecans and cranberry's@@300@@0.0
+Greek Salad@@Primarily consists of tomatoes, cucumbers, olives, and feta cheese@@100@@3.25
+Key Lime Pie@@A classic fluffy, airy, dessert topped with whip-cream@@290@@5.0
+The total calories for this menu is: 1055
+The total price for this menu is: 20.55
 Menu 2---------------------
-Beef Wellington@@Perfectly cooked Steak coated in seasoning then wrapped in a cooked pastry dough@@680@@18.5
-French Fries@@A helping of tasty beer-battered fries@@275@@0.0
-Nicoise Salad@@consists of tomatoes, hard boiled eggs, anchovies, and Nicoise olives@@140@@0.0
-Dirt Dessert@@A vanilla cream pudding seperated by layers of oreos with little gummy worms on top@@390@@3.75
-The total calories for this menu is: 1485
-The total price for this menu is: 22.25
+Savory Scallops@@Beautifully seared scallops dashed with lemon pepper and coastal herbs@@365@@12.3
+Corn on the Cob@@A full husk of corn that is buttered and seasoned with salt and pepper to your hearts delight@@380@@0.0
+Caesar Salad@@RomaneLettuce, cruncy croutons, and light dusting of parmesan@@105@@2.85
+Creme Brulee@@A rich creamy vanilla custard base sealed by a layer of hardened caramelized sugar@@410@@9.0
+The total calories for this menu is: 1260
+The total price for this menu is: 24.15
 Menu 3---------------------
 Savory Scallops@@Beautifully seared scallops dashed with lemon pepper and coastal herbs@@365@@12.3
 Corn on the Cob@@A full husk of corn that is buttered and seasoned with salt and pepper to your hearts delight@@380@@0.0
 Pasta Salad@@Hand picked Grapes, some hard-boiled eggs, and a pickle@@120@@2.5
-Key Lime Pie@@A classic fluffy, airy, dessert topped with whip-cream@@290@@5.0
-The total calories for this menu is: 1155
-The total price for this menu is: 19.8
+Pecan Pie@@Chocolate filling covered in pecan nuts with a hint of whip cream all on a thin pie crust@@405@@5.75
+The total calories for this menu is: 1270
+The total price for this menu is: 20.55
 Menu 4---------------------
-Beef Wellington@@Perfectly cooked Steak coated in seasoning then wrapped in a cooked pastry dough@@680@@18.5
+Alaskan Wild-Caught Salmon@@An entire salmon smoked for hours topped with fresh lemon slices and a relish-mayo infused tarter sauce@@610@@17.0
+Grilled Asparagus@@Lightly salted asparagus brazed with olive oil@@100@@0.0
+Caesar Salad@@RomaneLettuce, cruncy croutons, and light dusting of parmesan@@105@@2.85
+Creme Brulee@@A rich creamy vanilla custard base sealed by a layer of hardened caramelized sugar@@410@@9.0
+The total calories for this menu is: 1225
+The total price for this menu is: 28.85
+Menu 5---------------------
+Alaskan Wild-Caught Salmon@@An entire salmon smoked for hours topped with fresh lemon slices and a relish-mayo infused tarter sauce@@610@@17.0
 French Fries@@A helping of tasty beer-battered fries@@275@@0.0
 Pasta Salad@@Hand picked Grapes, some hard-boiled eggs, and a pickle@@120@@2.5
 Creme Brulee@@A rich creamy vanilla custard base sealed by a layer of hardened caramelized sugar@@410@@9.0
-The total calories for this menu is: 1485
-The total price for this menu is: 30.0
+The total calories for this menu is: 1415
+The total price for this menu is: 28.5
+Menu 6---------------------
+Alaskan Wild-Caught Salmon@@An entire salmon smoked for hours topped with fresh lemon slices and a relish-mayo infused tarter sauce@@610@@17.0
+French Fries@@A helping of tasty beer-battered fries@@275@@0.0
+Nicoise Salad@@consists of tomatoes, hard boiled eggs, anchovies, and Nicoise olives@@140@@0.0
+Key Lime Pie@@A classic fluffy, airy, dessert topped with whip-cream@@290@@5.0
+The total calories for this menu is: 1315
+The total price for this menu is: 22.0
+Menu 7---------------------
+Beef Wellington@@Perfectly cooked Steak coated in seasoning then wrapped in a cooked pastry dough@@680@@18.5
+Grilled Asparagus@@Lightly salted asparagus brazed with olive oil@@100@@0.0
+Nicoise Salad@@consists of tomatoes, hard boiled eggs, anchovies, and Nicoise olives@@140@@0.0
+Dirt Dessert@@A vanilla cream pudding seperated by layers of oreos with little gummy worms on top@@390@@3.75
+The total calories for this menu is: 1310
+The total price for this menu is: 22.25
+Menu 8---------------------
+Spicy Southern Burger@@A 1/2 pound angus patty cooked to medium rare with onion rings, dill pickles, brisket, and a spicy BBQ on a brioche bun@@720@@11.25
+Grilled Asparagus@@Lightly salted asparagus brazed with olive oil@@100@@0.0
+Pasta Salad@@Hand picked Grapes, some hard-boiled eggs, and a pickle@@120@@2.5
+Key Lime Pie@@A classic fluffy, airy, dessert topped with whip-cream@@290@@5.0
+The total calories for this menu is: 1230
+The total price for this menu is: 18.75
+Menu 9---------------------
+Spicy Southern Burger@@A 1/2 pound angus patty cooked to medium rare with onion rings, dill pickles, brisket, and a spicy BBQ on a brioche bun@@720@@11.25
+Apple Rice Pilaf@@English Rice dish sprinkled with apples, pecans and cranberry's@@300@@0.0
+Greek Salad@@Primarily consists of tomatoes, cucumbers, olives, and feta cheese@@100@@3.25
+Key Lime Pie@@A classic fluffy, airy, dessert topped with whip-cream@@290@@5.0
+The total calories for this menu is: 1410
+The total price for this menu is: 19.5
