@@ -28,6 +28,13 @@ import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
 
+
+/**
+ * Class: MenuManagerGUI
+ * @author Brandon Hoover
+ * Created: 11/27/2022
+ */
+
 public class MenuManagerGUI {
 
 	// Declaring the GUI objects that you will be using 
@@ -84,6 +91,13 @@ public class MenuManagerGUI {
 	// When something has a J in front of it that means that it is swing and not the old AWT
 	// Is this what you meant when you mentioned that all components had to be declared as properties?
 
+	/**
+	 * Constructor MenuManagerGUI 
+	 * -initializes state of non GUI objects, of which there are two (counters), 
+	 * calls initGui, which is the GUI, which is the display that the user will see. 
+	 * And creates a new instance of MenuManager which then avoids having to set everything to static
+	 */
+	
 	public MenuManagerGUI() {
 
 		// initializing the state of these objects
@@ -94,6 +108,17 @@ public class MenuManagerGUI {
 
 		initGui(newMM);
 	}
+	
+	/**
+	 * Method initGui
+	 * -activates and places all GUI objects that the user can then interact with, also contains all 
+	 * event listeners at which point when the user clicks a button it will trigger that section of code.
+	 * Is the main method contained within class MenuManagerGUI 
+	 * @param MenuManager newMM - an instance of MenuManager that will take all of the loaded data that has been read, sorted, and loaded through the constructor, 
+	 * and pass that data for this method utilize it below.
+	 * a
+	 * @return no return as the type is void
+	 */
 
 	private void initGui(MenuManager newMM) {
 
@@ -366,13 +391,8 @@ public class MenuManagerGUI {
 				priceText.setEditable(false);
 				priceText.setBounds(360,430,100,30);
 				detailFrame.add(priceText);
-
-
-
 			}
 		});
-
-
 
 		mainFrame.add(detailsButton);
 
@@ -412,7 +432,6 @@ public class MenuManagerGUI {
 		/*
 		 * Generating menus to have before the user begins to generate menu from the button
 		 * Saving those menus to an array and then adding the Jlist with the array passing through
-		 * but it has to be toString for the actual thing to display?
 		 */
 
 		
@@ -420,6 +439,12 @@ public class MenuManagerGUI {
 
 
 	}
+
+	/**
+	 * Method main
+	 * The main driver method that creates the an instance of MenuManagerGUI, launched application
+	 * @param String[] args - ....
+	 */
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

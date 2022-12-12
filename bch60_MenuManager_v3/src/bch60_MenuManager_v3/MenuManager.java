@@ -22,8 +22,7 @@ public class MenuManager {
 
 	/**
 	 * Constructor MenuManager
-	 * @param String dishesFile - Relative filepath for data that will be read 
-	 * @return no return for a constructor 
+	 * @param dishesFile - String - Relative filepath for data that will be read 
 	 */
 
 	public MenuManager (String dishesFile) {
@@ -38,10 +37,9 @@ public class MenuManager {
 
 	/**
 	 * Method usingReadItems
-	 * @desc Essentially as suggested this method functions as a way to implement readItems method and 
+	 * - Essentially as suggested this method functions as a way to implement readItems method and 
 	 * sort through the MenuItem Array List into other array List of its object type, such as Entree, Side, Salad, or Dessert.
-	 * @param String fileName - relative file path that path should be set too
-	 * @return no return as it is void
+	 * @param fileName - String - relative file path that path should be set too
 	 */
 
 	public void usingReadItems (String filename) {
@@ -80,8 +78,8 @@ public class MenuManager {
 
 	/**
 	 * Method randomMenu
-	 * @param String name - name of the menu that is going to be randomly generated
-	 * @return randomizedMenu  - a randomly generated (menu)object of type menu using the sorted ArrayLists that
+	 * @param name, string, name of the menu that is going to be randomly generated
+	 * @return randomizedMenu - a randomly generated (menu)object of type menu using the sorted ArrayLists that
 	 * have been created within MenuManager class 
 	 */
 
@@ -98,7 +96,14 @@ public class MenuManager {
 
 		return randomizedMenu;
 	}
-	
+	/**
+	 * Method maxCaloriesMenu
+	 * - reads through the arrayLists contained within MenuManager class and generates the highest calories menu 
+	 * using multiple for loops
+	 * - type Menu
+	 * @param name - String - name of the highest calories menu that you are generating
+	 * @return the generated Maximum Calories Menu 
+	 */
 	public static Menu maxCaloriesMenu(String name) {
 		int calSaver=0;
 		int entreeIndex = 0;
@@ -155,7 +160,14 @@ public class MenuManager {
 		
 		return maxCal;
 	}
-	
+	/**
+	 * Method minCaloriesMenu
+	 * - reads through the arrayLists contained within MenuManager class and generates the lowest calories menu 
+	 * using multiple for loops
+	 * - type Menu
+	 * @param name - String - name of the lowest calories menu that you are generating
+	 * @return the generated lowest calories menu
+	 */
 	public static Menu minCaloriesMenu(String name) {
 		int calSaver=2000; // Must be very large to get the if conditional iterator to properly start
 		int entreeIndex = 0;

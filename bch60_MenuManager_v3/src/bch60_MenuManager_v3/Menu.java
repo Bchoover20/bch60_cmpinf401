@@ -18,7 +18,6 @@ public class Menu {
 	/**
 	 * Constructor Menu
 	 * @param String name  - The name of the menu object that is being created
-	 * @return no return for a constructor 
 	 */
 	
 	public Menu(String name){ 
@@ -33,7 +32,6 @@ public class Menu {
 	 * @param String name  - The name of the menu object that is being created
 	 * @param Entree entree - Entree Item that is being used in the menu Object
 	 * @param Side side - Side Item that is being used in the menu Object
-	 * @return no return for a constructor
 	 */
 	
 	public Menu (String name, Entree entree, Side side) {
@@ -48,7 +46,6 @@ public class Menu {
 	 * @param Side side - Side item that is being used in the menu Object
 	 * @param Salad salad - Salad item that is being used in the menu Object
 	 * @param Dessert dessert - Dessert item that is being used in the menu Object
-	 * @return no return for a constructor
 	 */
 	
 	public Menu (String name, Entree entree, Side side, Salad salad, Dessert dessert) {
