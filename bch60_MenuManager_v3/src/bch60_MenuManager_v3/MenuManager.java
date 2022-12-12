@@ -94,8 +94,7 @@ public class MenuManager {
 		int saladRandoNum = randoNum.nextInt(4);
 		int dessertRandoNum = randoNum.nextInt(4);
 
-		Menu randomizedMenu = new Menu(name , entrees.get(entreeRandoNum),sides.get(sideRandoNum), salads.get(saladRandoNum), desserts.get(dessertRandoNum));
-
+		Menu randomizedMenu = new Menu(name, entrees.get(entreeRandoNum),sides.get(sideRandoNum), salads.get(saladRandoNum), desserts.get(dessertRandoNum));
 
 		return randomizedMenu;
 	}
@@ -152,7 +151,7 @@ public class MenuManager {
 			}
 		}
 		
-		Menu maxCal = new Menu("The highest Calorie Menu: ", entrees.get(entreeIndex), sides.get(sideIndex), salads.get(saladIndex), desserts.get(dessertIndex));
+		Menu maxCal = new Menu("The Highest Calorie Menu: ", entrees.get(entreeIndex), sides.get(sideIndex), salads.get(saladIndex), desserts.get(dessertIndex));
 		
 		return maxCal;
 	}
@@ -209,7 +208,7 @@ public class MenuManager {
 			}
 		}
 		
-		Menu minCal = new Menu("The lowest Calorie Menu: ", entrees.get(entreeIndex), sides.get(sideIndex), salads.get(saladIndex), desserts.get(dessertIndex));
+		Menu minCal = new Menu("The Lowest Calorie Menu: ", entrees.get(entreeIndex), sides.get(sideIndex), salads.get(saladIndex), desserts.get(dessertIndex));
 		
 		return minCal;
 	}

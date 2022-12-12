@@ -1,0 +1,35 @@
+Menu for Monday---------------------
+Beef Wellington@@Perfectly cooked Steak coated in seasoning then wrapped in a cooked pastry dough@@680@@18.5
+Corn on the Cob@@A full husk of corn that is buttered and seasoned with salt and pepper to your hearts delight@@380@@0.0
+House Salad@@A fresh mixed salad topped with an Italian vinegarratte@@135@@2.75
+Creme Brulee@@A rich creamy vanilla custard base sealed by a layer of hardened caramelized sugar@@410@@9.0
+The total calories for this menu is: 1605
+The total price for this menu is: 30.25
+'Vegan Menu'---------------------
+Savory Scallops@@Beautifully seared scallops dashed with lemon pepper and coastal herbs@@365@@12.3
+Grilled Asparagus@@Lightly salted asparagus brazed with olive oil@@100@@0.0
+Greek Salad@@Primarily consists of tomatoes, cucumbers, olives, and feta cheese@@100@@3.25
+Strawberry Cheesecake@@Lemon strawberry infused cheesecake with fresh strawberries on top@@450@@4.5
+The total calories for this menu is: 1015
+The total price for this menu is: 20.05
+Your Menu 1---------------------
+Alaskan Wild-Caught Salmon@@An entire salmon smoked for hours topped with fresh lemon slices and a relish-mayo infused tarter sauce@@610@@17.0
+Corn on the Cob@@A full husk of corn that is buttered and seasoned with salt and pepper to your hearts delight@@380@@0.0
+Greek Salad@@Primarily consists of tomatoes, cucumbers, olives, and feta cheese@@100@@3.25
+Creme Brulee@@A rich creamy vanilla custard base sealed by a layer of hardened caramelized sugar@@410@@9.0
+The total calories for this menu is: 1500
+The total price for this menu is: 29.25
+The Lowest Calorie Menu: ---------------------
+Savory Scallops@@Beautifully seared scallops dashed with lemon pepper and coastal herbs@@365@@12.3
+Grilled Asparagus@@Lightly salted asparagus brazed with olive oil@@100@@0.0
+Greek Salad@@Primarily consists of tomatoes, cucumbers, olives, and feta cheese@@100@@3.25
+Key Lime Pie@@A classic fluffy, airy, dessert topped with whip-cream@@290@@5.0
+The total calories for this menu is: 855
+The total price for this menu is: 20.55
+The Highest Calorie Menu: ---------------------
+New York Strip@@A classic Steak cooked to medium rare that is well marbled and tender@@810@@21.99
+Corn on the Cob@@A full husk of corn that is buttered and seasoned with salt and pepper to your hearts delight@@380@@0.0
+Nicoise Salad@@consists of tomatoes, hard boiled eggs, anchovies, and Nicoise olives@@140@@0.0
+Strawberry Cheesecake@@Lemon strawberry infused cheesecake with fresh strawberries on top@@450@@4.5
+The total calories for this menu is: 1780
+The total price for this menu is: 26.49

@@ -15,6 +15,10 @@ public class Assign3Driver {
 		// TODO Auto-generated method stub
 	
 		ArrayList<Menu> menus = new ArrayList<Menu>();
+		
+		for (Menu element : menus) {
+			System.out.println(element);
+		}
 		MenuManager userTest = new MenuManager("cd ..\\..\\data\\dishes.txt");
 		
 		Scanner myObj = new Scanner(System.in);
