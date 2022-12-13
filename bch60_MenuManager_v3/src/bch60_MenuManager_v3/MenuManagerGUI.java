@@ -19,6 +19,7 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -68,7 +69,6 @@ public class MenuManagerGUI {
 	JScrollPane listScroller;
 
 	int userMenuCount;
-	int randomMenuCount;
 
 	JButton detailsButton;
 	JButton deleteButton;
@@ -102,7 +102,6 @@ public class MenuManagerGUI {
 
 		// initializing the state of these objects
 		userMenuCount=0;
-		randomMenuCount=0;
 		MenuManager newMM = new MenuManager("cd ..\\..\\data\\dishes.txt");
 		//System.out.println("Constructor was called");
 
@@ -244,10 +243,10 @@ public class MenuManagerGUI {
 		botButton1.setBounds(30,30,282,25);
 		botButton1.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
+				
+				String userInputName = JOptionPane.showInputDialog("Name your Random Menu: ");
 
-				randomMenuCount++;
-
-				Menu randoMen = newMM.randomMenu("A Random Menu " + randomMenuCount); 
+				Menu randoMen = newMM.randomMenu(userInputName); 
 				listModel.addElement(randoMen);
 				// must use newMM since that is the new instance of the MenuManager class that you are using
 				// that could be an error along with the static problem from last assignment
